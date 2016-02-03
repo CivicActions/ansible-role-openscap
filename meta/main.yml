@@ -11,10 +11,10 @@ galaxy_info:
   platforms:
   - name: Red Hat
     versions:
-    - 6+
+    - all
   - name: CentOS
     versions:
-    - 6+
+    - all
   categories:
     - development
     - security
