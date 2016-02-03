@@ -1,10 +1,12 @@
 ---
+dependencies:
+  - { role: openprivacy.scap-security-guide }
 
 galaxy_info:
   author: openprivacy
   description: Install OpenSCAP - security scanner
   company: "CivicActions, Inc."
-  license: "GPL 2+"
+  license: "GPL v3"
   min_ansible_version: 1.4
   platforms:
   - name: Red Hat
