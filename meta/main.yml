@@ -1,0 +1,18 @@
+---
+
+galaxy_info:
+  author: openprivacy
+  description: Install OpenSCAP - security scanner
+  company: "CivicActions, Inc."
+  license: "GPL 2+"
+  min_ansible_version: 1.4
+  platforms:
+  - name: Red Hat
+    versions:
+    - 6+
+  - name: CentOS
+    versions:
+    - 6+
+  categories:
+    - development
+    - security
