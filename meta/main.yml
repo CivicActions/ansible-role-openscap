@@ -15,6 +15,7 @@ galaxy_info:
   - name: CentOS
     versions:
     - all
-  categories:
-    - development
+  galaxy_tags:
     - security
+    - monitoring
+    - content
