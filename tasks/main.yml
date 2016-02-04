@@ -1,6 +1,7 @@
 ---
 
-# Install newest stable version of OpenSCAP
+# Install newest stable version of OpenSCAP.
+# Package openscap-utils provides oscap.ssh (not needed on remote machines).
 
 - name: Add OpenSCAP yum repo
   copy: src=isimluk-OpenSCAP-epel-7.repo
@@ -10,4 +11,5 @@
 - name: Install OpenSCAP packages
   yum: pkg="{{item}}" state=installed
   with_items:
-    - openscap
+    - openscap-scanner
+    - openscap-utils
