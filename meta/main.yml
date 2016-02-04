@@ -7,7 +7,7 @@ galaxy_info:
   description: Install OpenSCAP - security scanner
   company: "CivicActions, Inc."
   license: "GPL v3"
-  min_ansible_version: 1.4
+  min_ansible_version: 1.9
   platforms:
   - name: Red Hat
     versions:
