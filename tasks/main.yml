@@ -8,8 +8,19 @@
         dest=/etc/yum.repos.d/
         owner=root group=root mode=0644
 
-- name: Install OpenSCAP packages
+- name: Install OpenSCAP packages and git on all machines.
   yum: pkg="{{item}}" state=installed
   with_items:
     - openscap-scanner
     - openscap-utils
+    - git
+
+- name: Create oscap-user account on all machines.
+  user: name=oscap-user
+
+- name: Enable oscap-user to run openscap scanner as root.
+  copy: src=99-oscap-user
+        dest=/etc/sudoers.d/
+        owner=root group=root mode=0640
+        force=no
+  become: true
