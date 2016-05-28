@@ -1,6 +1,6 @@
 # ansible-role-openscap
 
-Role to install the latest OpenSCAP.
+### Role to install the latest OpenSCAP.
 
 The [Security Content Automation Protocol (SCAP)](http://scap.nist.gov/) is a U.S. standard maintained by the National Institute of Standards and Technology (NIST). SCAP provides a specification for system for vulnerability detetection and remediation.
 
@@ -10,4 +10,21 @@ SCAP supports the process of FISMA Compliance, and the [National Vulnerability D
 
 Note that this role will install OpenSCAP version 1.2.x which has not yet received NIST certification.
 
+### Quick start (testing with local vagrant instaces)
+
 To make OpenSCAP easier/more manageable to use, see the [GovReady toolkit role](https://github.com/CivicActions/ansible-role-govready/).
+
+### To install the latest openscap on your servers
+
+Example `openscap-playbook.yml`:
+```
+- name: Install openscap on all servers
+  hosts: servers
+  roles:
+    - { role: CivicActions.openscap, become: true }
+```
+
+Run command:
+```
+ansible-playbook -i inventory openscap-playbook.yml
+```
