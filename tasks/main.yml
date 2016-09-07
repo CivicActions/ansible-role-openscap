@@ -4,7 +4,7 @@
 # Package openscap-utils provides oscap.ssh (not needed on remote machines).
 
 - name: Add OpenSCAP yum repo
-  copy: src=isimluk-OpenSCAP-epel-7.repo
+  copy: src=openscapmaint-openscap-latest-epel-7.repo
         dest=/etc/yum.repos.d/
         owner=root group=root mode=0644
 
